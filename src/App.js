@@ -6,12 +6,14 @@ import Sweden from "./pages/Sweden"
 import Iceland from "./pages/Iceland"
 import Norway from "./pages/Norway"
 import Favorite from "./pages/Favorites"
+import AddNewPlaces from "./pages/AddNewPlaces"
 import Navigation from "./components/Navigation"
+
 function App() {
 	return (
 		<>
 			<Navigation />
-			<Container className='bg-light m-4'>
+			<Container>
 				<Routes>
 					<Route path='/' element={<Root />} />
 					<Route path='/denmark' element={<Denmark />} />
@@ -19,6 +21,7 @@ function App() {
 					<Route path='/sweden' element={<Sweden />} />
 					<Route path='/iceland' element={<Iceland />} />
 					<Route path='/favorites' element={<Favorite />} />
+					<Route path='/addnewplaces' element={<AddNewPlaces />} />
 				</Routes>
 			</Container>
 		</>

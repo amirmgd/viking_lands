@@ -3,7 +3,11 @@ import { NavLink as Link } from "react-router-dom"
 
 function Navigation() {
 	return (
-		<Navbar className='bg-white shadow-sm mb-3' collapseOnSelect expand='lg'>
+		<Navbar
+			className='bg-white shadow-sm mb-3'
+			collapseOnSelect
+			expand='lg'
+			sticky='top'>
 			<Container>
 				<Navbar.Brand as={Link} to='/'>
 					Viking Land

@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F5F1F3;
+    background-color: #E9E8E9 !important;
   
 }
 
@@ -27,4 +27,21 @@ code {
   background-color: #C4C0C2;
   border-radius: 50%;
   padding: 2px;
+}
+.span:hover{
+  font-weight:700;
+}
+
+.favbutton{
+  width: max-content;
+  margin-left: 35%;
+  color: black !important;
+  border: solid 1px black !important;
+  background-color: white !important;
+}
+.favbutton:hover{
+  background-color: #C4C0C2 !important;
+}
+.favbutton:focus{
+  box-shadow: none !important;
 }

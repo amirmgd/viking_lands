@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap"
 function Norway() {
 	return (
-		<Container className='m-2'>
+		<Container>
 			<h3>Here is some places to visit in Norway:</h3>
 		</Container>
 	)
