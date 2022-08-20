@@ -4,7 +4,7 @@ function PlaceCard(props) {
 	return (
 		<Container className='m-4 p-4' style={{ width: "70%" }}>
 			<CardGroup>
-				<Card style={{ border: "none" }}>
+				<Card style={{ border: "none", backgroundColor: "#E9E8E9" }}>
 					<Card.Title>{props.title}</Card.Title>
 					<Card.Img src={props.image} alt={props.title}></Card.Img>
 					<Card.Body>
@@ -12,7 +12,7 @@ function PlaceCard(props) {
 							{props.description}
 						</Card.Text>
 					</Card.Body>
-					<Card.Footer style={{ border: "none" }}>
+					<Card.Footer style={{ border: "none", backgroundColor: "#E9E8E9" }}>
 						<Button className='favbutton' size='sm'>
 							save to favorite
 						</Button>

@@ -27,6 +27,7 @@ code {
   background-color: #C4C0C2;
   border-radius: 50%;
   padding: 2px;
+  color:white
 }
 .span:hover{
   font-weight:700;
@@ -34,7 +35,7 @@ code {
 
 .favbutton{
   width: max-content;
-  margin-left: 35%;
+  margin-left: 42%;
   color: black !important;
   border: solid 1px black !important;
   background-color: white !important;
