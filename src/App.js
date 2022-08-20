@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Container } from "react-bootstrap"
+import { Routes, Route } from "react-router-dom"
+import Root from "./pages/Root"
+import Denmark from "./pages/Denmark"
+import Sweden from "./pages/Sweden"
+import Iceland from "./pages/Iceland"
+import Norway from "./pages/Norway"
+import Favorite from "./pages/Favorites"
+import Navigation from "./components/Navigation"
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<Navigation />
+			<Container className='bg-light m-4'>
+				<Routes>
+					<Route path='/' element={<Root />} />
+					<Route path='/denmark' element={<Denmark />} />
+					<Route path='/norway' element={<Norway />} />
+					<Route path='/sweden' element={<Sweden />} />
+					<Route path='/iceland' element={<Iceland />} />
+					<Route path='/favorites' element={<Favorite />} />
+				</Routes>
+			</Container>
+		</>
+	)
 }
 
-export default App;
+export default App
