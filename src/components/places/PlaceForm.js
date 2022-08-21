@@ -1,7 +1,7 @@
 import { Container, Form, Button } from "react-bootstrap"
 import { useRef } from "react"
 
-function PlaceForm() {
+function PlaceForm(props) {
 	const titleplaceRef = useRef()
 	const imageplaceRef = useRef()
 	const countryplaceRef = useRef()
@@ -22,7 +22,7 @@ function PlaceForm() {
 			description: placeDecr,
 		}
 
-		console.log(placeData)
+		props.onAddPlaces(placeData)
 	}
 
 	return (

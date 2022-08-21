@@ -16,9 +16,6 @@ function Navigation() {
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='ms-auto'>
 						<NavDropdown title='Countries'>
-							<NavDropdown.Item as={Link} to='/sweden'>
-								Sweden
-							</NavDropdown.Item>
 							<NavDropdown.Item as={Link} to='/denmark'>
 								Denmark
 							</NavDropdown.Item>
@@ -27,6 +24,9 @@ function Navigation() {
 							</NavDropdown.Item>
 							<NavDropdown.Item as={Link} to='/norway'>
 								Norway
+							</NavDropdown.Item>
+							<NavDropdown.Item as={Link} to='/sweden'>
+								Sweden
 							</NavDropdown.Item>
 						</NavDropdown>
 						<Nav.Link as={Link} to='/addnewplaces'>

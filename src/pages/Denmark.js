@@ -1,29 +1,47 @@
 import { Container } from "react-bootstrap"
 import PlaceList from "../components/places/PlaceList"
+import { useState, useEffect } from "react"
 
-const DUMMY_DATA = [
-	{
-		id: "d1",
-		title: "Gilleleje",
-		description:
-			"You wouldn’t think a country as far north as Denmark would have a Riviera, but it does. The Danish Riviera is anchored by Gilleleje, a picturesque fishing town on the North Sea at the top of Zealand. Fishermen put their boats to good use in World War II when they end-runned German occupiers and smuggled Danish Jews into Sweden, just 25 km (15 miles) away. You can learn more about these efforts at the local museum. Founded in the 14th century, Gilleleje is pretty and charming with photo opportunities galore. Stroll the city, take in the daily morning fish auction and visit the monument to Kierkegaard, the first existential philosopher.",
-		image:
-			"https://www.touropia.com/gfx/d/best-places-to-visit-in-denmark/gilleleje.jpg",
-	},
-	{
-		id: "d2",
-		title: "Gilleleje",
-		description:
-			"You wouldn’t think a country as far north as Denmark would have a Riviera, but it does. The Danish Riviera is anchored by Gilleleje, a picturesque fishing town on the North Sea at the top of Zealand. Fishermen put their boats to good use in World War II when they end-runned German occupiers and smuggled Danish Jews into Sweden, just 25 km (15 miles) away. You can learn more about these efforts at the local museum. Founded in the 14th century, Gilleleje is pretty and charming with photo opportunities galore. Stroll the city, take in the daily morning fish auction and visit the monument to Kierkegaard, the first existential philosopher.",
-		image:
-			"https://www.touropia.com/gfx/d/best-places-to-visit-in-denmark/gilleleje.jpg",
-	},
-]
 function Denmark() {
+	const [isLoading, setIsLoading] = useState(true)
+	const [loadedData, setLoadedData] = useState([])
+
+	useEffect(() => {
+		setIsLoading(true)
+		fetch(
+			"https://react-first-pro-418c3-default-rtdb.firebaseio.com/denmark.json"
+		)
+			.then((response) => {
+				return response.json()
+			})
+			.then((data) => {
+				const places = []
+				for (const key in data) {
+					const place = {
+						id: key,
+						...data[key],
+					}
+					console.log(place)
+					places.push(place)
+				}
+
+				setIsLoading(false)
+				setLoadedData(places)
+			})
+	}, [])
+
+	if (isLoading) {
+		return (
+			<Container>
+				<p>Loading...</p>
+			</Container>
+		)
+	}
+
 	return (
 		<Container>
 			<h3>Here is some places to visit in Denmark</h3>
-			<PlaceList places={DUMMY_DATA} />
+			<PlaceList places={loadedData} />
 		</Container>
 	)
 }
