@@ -1,6 +1,23 @@
 import { Container, Card, CardGroup, Button } from "react-bootstrap"
-
+import { useContext } from "react"
+import FavContext from "../../store/favorites-context"
 function PlaceCard(props) {
+	const favorite = useContext(FavContext)
+	const itemIsFav = favorite.itemIsFav(props.id)
+
+	function toggleFavorite() {
+		if (itemIsFav) {
+			favorite.removeFav(props.id)
+		} else {
+			favorite.addFav({
+				id: props.id,
+				title: props.title,
+				image: props.image,
+				description: props.description,
+			})
+		}
+	}
+
 	return (
 		<Container className='m-4 p-4' style={{ width: "70%" }}>
 			<CardGroup>
@@ -13,8 +30,8 @@ function PlaceCard(props) {
 						</Card.Text>
 					</Card.Body>
 					<Card.Footer style={{ border: "none", backgroundColor: "#E9E8E9" }}>
-						<Button className='favbutton' size='sm'>
-							save to favorite
+						<Button className='favbutton' size='sm' onClick={toggleFavorite}>
+							{itemIsFav ? "remove" : "add"}
 						</Button>
 					</Card.Footer>
 				</Card>

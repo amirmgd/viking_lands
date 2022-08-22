@@ -52,7 +52,7 @@ function AddNewPlaces() {
 
 	return (
 		<Container>
-			Feel free to add some to places for our viewers to visit
+			Feel free to add some places for our viewers to visit
 			<PlaceForm onAddPlaces={addPlacesHandler} />
 		</Container>
 	)

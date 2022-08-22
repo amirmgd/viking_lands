@@ -8,10 +8,11 @@ import Norway from "./pages/Norway"
 import Favorite from "./pages/Favorites"
 import AddNewPlaces from "./pages/AddNewPlaces"
 import Navigation from "./components/Navigation"
+import { FavoriteContextProvider } from "./store/favorites-context"
 
 function App() {
 	return (
-		<>
+		<FavoriteContextProvider>
 			<Navigation />
 			<Container>
 				<Routes>
@@ -24,7 +25,7 @@ function App() {
 					<Route path='/addnewplaces' element={<AddNewPlaces />} />
 				</Routes>
 			</Container>
-		</>
+		</FavoriteContextProvider>
 	)
 }
 

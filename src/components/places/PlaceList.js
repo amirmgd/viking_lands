@@ -6,7 +6,7 @@ function PlaceList(props) {
 		<Container>
 			{props.places.map((place) => (
 				<PlaceCard
-					key={place.id}
+					id={place.id}
 					title={place.title}
 					image={place.image}
 					description={place.description}
