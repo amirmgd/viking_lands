@@ -31,7 +31,7 @@ function PlaceCard(props) {
 					</Card.Body>
 					<Card.Footer style={{ border: "none", backgroundColor: "#E9E8E9" }}>
 						<Button className='favbutton' size='sm' onClick={toggleFavorite}>
-							{itemIsFav ? "remove" : "add"}
+							{itemIsFav ? "Remove from favorite" : "Add to Favorite"}
 						</Button>
 					</Card.Footer>
 				</Card>
