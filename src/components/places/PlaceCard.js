@@ -19,7 +19,7 @@ function PlaceCard(props) {
 	}
 
 	return (
-		<Container className='m-4 p-4' style={{ width: "70%" }}>
+		<Container>
 			<CardGroup>
 				<Card style={{ border: "none", backgroundColor: "#E9E8E9" }}>
 					<Card.Title>{props.title}</Card.Title>

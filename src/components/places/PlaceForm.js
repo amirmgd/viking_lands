@@ -28,7 +28,6 @@ function PlaceForm(props) {
 	return (
 		<Container>
 			<Form
-				className='m-5'
 				style={{
 					border: "solid 1px black",
 					borderRadius: "1%",

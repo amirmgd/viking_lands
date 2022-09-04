@@ -14,7 +14,7 @@ function App() {
 	return (
 		<FavoriteContextProvider>
 			<Navigation />
-			<Container>
+			<Container className='d-flex justify-content-center justify-items-center'>
 				<Routes>
 					<Route path='/' element={<Root />} />
 					<Route path='/denmark' element={<Denmark />} />

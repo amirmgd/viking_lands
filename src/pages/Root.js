@@ -4,14 +4,14 @@ import Slider from "../components/Slider"
 
 function Root() {
 	return (
-		<Container className='m-5'>
+		<Container>
 			<p>
 				welcome to viking lands, here we recommend some beautiful places from
 				the lands of vikings.
 			</p>
 
 			<Slider />
-			<div className='m-3' style={{ position: "inherit" }}>
+			<div>
 				<p>
 					we will show you some great places in{" "}
 					<NavLink to='/norway'>Norway</NavLink>,{" "}
