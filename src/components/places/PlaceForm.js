@@ -26,7 +26,7 @@ function PlaceForm(props) {
 	}
 
 	return (
-		<Container>
+		<Container className='m-4'>
 			<Form
 				style={{
 					border: "solid 1px black",

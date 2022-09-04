@@ -19,7 +19,7 @@ function PlaceCard(props) {
 	}
 
 	return (
-		<Container>
+		<Container className='my-2'>
 			<CardGroup>
 				<Card style={{ border: "none", backgroundColor: "#E9E8E9" }}>
 					<Card.Title>{props.title}</Card.Title>
@@ -29,7 +29,12 @@ function PlaceCard(props) {
 							{props.description}
 						</Card.Text>
 					</Card.Body>
-					<Card.Footer style={{ border: "none", backgroundColor: "#E9E8E9" }}>
+					<Card.Footer
+						className='d-flex justify-content-center justify-items-center'
+						style={{
+							border: "none",
+							backgroundColor: "#E9E8E9",
+						}}>
 						<Button className='favbutton' size='sm' onClick={toggleFavorite}>
 							{itemIsFav ? "Remove from favorite" : "Add to Favorite"}
 						</Button>

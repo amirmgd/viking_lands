@@ -22,14 +22,6 @@ export default function Slider() {
 				</NavLink>
 				<Carousel.Caption>
 					<h3>Denmark</h3>
-					<p
-						style={{
-							backgroundColor: "rgba(225,224,225, 0.05)",
-						}}>
-						Denmark is the country where Scandinavia begins. Once known for its
-						fierce warriors, the Vikings, it’s now a peaceful modern country
-						where innovative architecture shares space with medieval buildings.
-					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -42,13 +34,6 @@ export default function Slider() {
 				</NavLink>
 				<Carousel.Caption>
 					<h3>Norway</h3>
-					<p
-						style={{
-							backgroundColor: "rgba(225,224,225, 0.1)",
-						}}>
-						Norway is a Scandinavian country whose boundaries encompass swathes
-						of frozen tundra, trendy cities, and an extensive coastline.
-					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -61,14 +46,6 @@ export default function Slider() {
 				</NavLink>
 				<Carousel.Caption>
 					<h3>Sweden</h3>
-					<p
-						style={{
-							backgroundColor: "rgba(225,224,225, 0.2)",
-						}}>
-						Sweden is filled with colorful wooden buildings, traditional huts,
-						stone fortresses and cathedrals, and some pretty innovative
-						contemporary architecture.
-					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -81,14 +58,6 @@ export default function Slider() {
 				</NavLink>
 				<Carousel.Caption>
 					<h3>Iceland</h3>
-					<p
-						style={{
-							backgroundColor: "rgba(225,224,225, 0.2)",
-						}}>
-						With their self-reliant spirit and deep sense of community, the
-						Icelandic people are just as enchanting as any of the best places to
-						visit in Iceland.
-					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
