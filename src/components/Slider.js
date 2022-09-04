@@ -9,7 +9,7 @@ export default function Slider() {
 	}
 	return (
 		<Carousel
-			style={{ width: "70%", marginLeft: "50px" }}
+			className='d-flex justify-content-center justify-items-center'
 			activeIndex={index}
 			onSelect={handleSelect}>
 			<Carousel.Item>
@@ -26,10 +26,9 @@ export default function Slider() {
 						style={{
 							backgroundColor: "rgba(225,224,225, 0.05)",
 						}}>
-						Denmark is the country where Scandinavia begins. It’s changed a lot
-						over the centuries. Once known for its fierce warriors, the Vikings,
-						it’s now a peaceful modern country where innovative architecture
-						shares space with medieval buildings.
+						Denmark is the country where Scandinavia begins. Once known for its
+						fierce warriors, the Vikings, it’s now a peaceful modern country
+						where innovative architecture shares space with medieval buildings.
 					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -47,11 +46,8 @@ export default function Slider() {
 						style={{
 							backgroundColor: "rgba(225,224,225, 0.1)",
 						}}>
-						The home of the Vikings, Norway is a Scandinavian country whose
-						boundaries encompass swathes of frozen tundra, trendy cities, and an
-						extensive coastline. From its majestic mountains and famous fjords
-						to its spectacular islands, Norway is simply one of the most
-						beautiful countries in the world.
+						Norway is a Scandinavian country whose boundaries encompass swathes
+						of frozen tundra, trendy cities, and an extensive coastline.
 					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -71,8 +67,7 @@ export default function Slider() {
 						}}>
 						Sweden is filled with colorful wooden buildings, traditional huts,
 						stone fortresses and cathedrals, and some pretty innovative
-						contemporary architecture. Whether it’s hiking trails or art museums
-						you’re looking for, Sweden has it .
+						contemporary architecture.
 					</p>
 				</Carousel.Caption>
 			</Carousel.Item>
@@ -92,9 +87,7 @@ export default function Slider() {
 						}}>
 						With their self-reliant spirit and deep sense of community, the
 						Icelandic people are just as enchanting as any of the best places to
-						visit in Iceland. Illuminated by the Northern Lights in the winter
-						and the midnight sun in the summer, Iceland shines in any season,
-						offering you a travel experience unlike anywhere else on the planet.
+						visit in Iceland.
 					</p>
 				</Carousel.Caption>
 			</Carousel.Item>

@@ -8,7 +8,7 @@ function Navigation() {
 
 	return (
 		<Navbar
-			className='bg-white shadow-sm mb-3'
+			className='bg-white shadow mb-3'
 			collapseOnSelect
 			expand='lg'
 			sticky='top'>
