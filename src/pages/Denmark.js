@@ -21,7 +21,6 @@ function Denmark() {
 						id: key,
 						...data[key],
 					}
-					console.log(place)
 					places.push(place)
 				}
 
